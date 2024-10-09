@@ -1,0 +1,9 @@
+C:\Users\trans\RiderProjects\TestUnitaireMath3D\TestUnitaireMath3D\obj\Debug\TestUnitaireMath3D.csproj.AssemblyReference.cache
+C:\Users\trans\RiderProjects\TestUnitaireMath3D\TestUnitaireMath3D\obj\Debug\TestUnitaireMath3D.csproj.CoreCompileInputs.cache
+C:\Users\trans\RiderProjects\TestUnitaireMath3D\TestUnitaireMath3D\bin\Debug\TestUnitaireMath3D.dll
+C:\Users\trans\RiderProjects\TestUnitaireMath3D\TestUnitaireMath3D\bin\Debug\TestUnitaireMath3D.pdb
+C:\Users\trans\RiderProjects\TestUnitaireMath3D\TestUnitaireMath3D\bin\Debug\nunit.framework.dll
+C:\Users\trans\RiderProjects\TestUnitaireMath3D\TestUnitaireMath3D\bin\Debug\nunit.framework.xml
+C:\Users\trans\RiderProjects\TestUnitaireMath3D\TestUnitaireMath3D\obj\Debug\TestUnitaireMath3D.csproj.CopyComplete
+C:\Users\trans\RiderProjects\TestUnitaireMath3D\TestUnitaireMath3D\obj\Debug\TestUnitaireMath3D.dll
+C:\Users\trans\RiderProjects\TestUnitaireMath3D\TestUnitaireMath3D\obj\Debug\TestUnitaireMath3D.pdb

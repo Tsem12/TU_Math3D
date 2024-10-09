@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props"
+            Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')"/>
+    <PropertyGroup>
+        <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+        <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+        <ProjectGuid>{B1621E52-902E-43F0-BD56-402EB5DF8FAA}</ProjectGuid>
+        <ProjectTypeGuids>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+        <OutputType>Library</OutputType>
+        <AppDesignerFolder>Properties</AppDesignerFolder>
+        <RootNamespace>TestUnitaireMath3D</RootNamespace>
+        <AssemblyName>TestUnitaireMath3D</AssemblyName>
+        <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+        <FileAlignment>512</FileAlignment>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+        <PlatformTarget>AnyCPU</PlatformTarget>
+        <DebugSymbols>true</DebugSymbols>
+        <DebugType>full</DebugType>
+        <Optimize>false</Optimize>
+        <OutputPath>bin\Debug\</OutputPath>
+        <DefineConstants>DEBUG;TRACE</DefineConstants>
+        <ErrorReport>prompt</ErrorReport>
+        <WarningLevel>4</WarningLevel>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+        <PlatformTarget>AnyCPU</PlatformTarget>
+        <DebugType>pdbonly</DebugType>
+        <Optimize>true</Optimize>
+        <OutputPath>bin\Release\</OutputPath>
+        <DefineConstants>TRACE</DefineConstants>
+        <ErrorReport>prompt</ErrorReport>
+        <WarningLevel>4</WarningLevel>
+    </PropertyGroup>
+    <ItemGroup>
+        <Reference Include="System"/>
+        <Reference Include="System.Core"/>
+        <Reference Include="System.Data"/>
+        <Reference Include="System.Xml"/>
+        <Reference Include="nunit.framework, Version=3.5.0.0, Culture=neutral, PublicKeyToken=2638cd05610744eb">
+            <HintPath>..\packages\NUnit.3.5.0\lib\net45\nunit.framework.dll</HintPath>
+        </Reference>
+    </ItemGroup>
+    <ItemGroup>
+        <Compile Include="Core\Exceptions\Exceptions.cs" />
+        <Compile Include="Core\Matrix\MatrixElementaryOperations.cs" />
+        <Compile Include="Core\Matrix\MatrixFloat.cs" />
+        <Compile Include="Core\Matrix\MatrixInt.cs" />
+        <Compile Include="Core\Matrix\MatrixRowReductionAlgorithm.cs" />
+        <Compile Include="Core\Transform\Transform.cs" />
+        <Compile Include="Core\Vector\Vector3.cs" />
+        <Compile Include="Core\Vector\Vector4.cs" />
+        <Compile Include="Properties\AssemblyInfo.cs"/>
+        <Compile Include="Tests\Tests01_NewMatrices.cs" />
+        <Compile Include="Tests\Tests02_CopyAndModifyMatrices.cs" />
+        <Compile Include="Tests\Tests03_IdentityMatrices.cs" />
+        <Compile Include="Tests\Tests04_ScalarMultiplication.cs" />
+        <Compile Include="Tests\Tests05_MatricesAddAndSubtract.cs" />
+        <Compile Include="Tests\Tests06_MatricesMultiplication.cs" />
+        <Compile Include="Tests\Tests07_TransposeMatrices.cs" />
+        <Compile Include="Tests\Tests08_ElementaryOperations.cs" />
+        <Compile Include="Tests\Tests09_AugmentedMatricesAndSplit.cs" />
+        <Compile Include="Tests\Tests10_RowReduction.cs" />
+        <Compile Include="Tests\Tests11_InvertMatricesUsingRowReduction.cs" />
+        <Compile Include="Tests\Tests12_SubMatrices.cs" />
+        <Compile Include="Tests\Tests13_Determinants.cs" />
+        <Compile Include="Tests\Tests14_AdjugateMatrices.cs" />
+        <Compile Include="Tests\Tests15_InvertMatricesUsingDeterminant.cs" />
+        <Compile Include="Tests\Tests16_TransformationMatrices.cs" />
+        <Compile Include="Tests\Tests17_TransformLocalPosition.cs" />
+        <Compile Include="Tests\Tests18_TransformLocalRotations.cs" />
+        <Compile Include="Tests\Tests19_TransformLocalScale.cs" />
+        <Compile Include="Tests\Tests20_TransformLocalEverything.cs" />
+    </ItemGroup>
+    <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets"/>
+    <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+         Other similar extension points exist, see Microsoft.Common.targets.
+    <Target Name="BeforeBuild">
+    </Target>
+    <Target Name="AfterBuild">
+    </Target>
+    -->
+
+</Project>
