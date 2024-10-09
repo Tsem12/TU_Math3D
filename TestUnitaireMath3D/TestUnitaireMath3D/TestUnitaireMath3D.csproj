@@ -72,6 +72,7 @@
         <Compile Include="Tests\Tests18_TransformLocalRotations.cs" />
         <Compile Include="Tests\Tests19_TransformLocalScale.cs" />
         <Compile Include="Tests\Tests20_TransformLocalEverything.cs" />
+        <Compile Include="Tests\Tests21_TransformSetParentAndCheckWorldPosition.cs" />
     </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets"/>
     <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

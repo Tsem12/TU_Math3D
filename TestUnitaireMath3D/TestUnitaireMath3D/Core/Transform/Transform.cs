@@ -75,7 +75,9 @@ public class Transform
     }
     public MatrixFloat LocalScaleMatrix { get; private set; } = MatrixFloat.Identity(4);
 
-    #endregion 
+    #endregion
+
+    public Transform Parent { get; private set; }
     
     public Transform(Vector3 localPosition = null, Vector3 localRotation = null, Vector3 localScale = null)
     {
@@ -86,4 +88,27 @@ public class Transform
 
     public MatrixFloat LocalToWorldMatrix => LocalTranslationMatrix * LocalRotationMatrix * LocalScaleMatrix;
     public MatrixFloat WorldToLocalMatrix => MatrixFloat.InvertByRowReduction(LocalToWorldMatrix);
+
+    public Vector3 WorldPosition
+    {
+        get
+        {
+            MatrixFloat TRS = LocalToWorldMatrix;
+            if (Parent == null)
+                return new Vector3(TRS[0, 3], TRS[1, 3], TRS[2, 3]);
+                
+            Transform currentParent = Parent;
+            TRS = currentParent.WorldToLocalMatrix;
+            while (currentParent.Parent != null)
+            {
+                TRS *= currentParent.Parent.WorldToLocalMatrix;
+                currentParent = Parent.Parent;
+            }
+
+            TRS *= LocalToWorldMatrix;
+            return new Vector3(TRS[0, 3], TRS[1, 3], TRS[2, 3]);
+        }
+    }
+
+    public void SetParent(Transform tParent) => Parent = tParent;
 }
