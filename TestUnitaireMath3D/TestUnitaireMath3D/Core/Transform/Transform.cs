@@ -77,38 +77,47 @@ public class Transform
 
     #endregion
 
-    public Transform Parent { get; private set; }
-    
-    public Transform(Vector3 localPosition = null, Vector3 localRotation = null, Vector3 localScale = null)
+    #region TRSMatrixs
+    public MatrixFloat LocalToWorldMatrix
     {
-        if(localPosition != null) {LocalPosition = localPosition;}
-        if(localRotation != null) {LocalRotation = localRotation;}
-        if(localScale != null) {LocalScale = localScale;}
+        get
+        {
+            if (Parent == null)
+            {
+                return LocalTranslationMatrix * LocalRotationMatrix * LocalScaleMatrix;
+            }
+            else
+            {
+                return Parent.LocalToWorldMatrix * (LocalTranslationMatrix * LocalRotationMatrix * LocalScaleMatrix);
+            }
+        }
     }
-
-    public MatrixFloat LocalToWorldMatrix => LocalTranslationMatrix * LocalRotationMatrix * LocalScaleMatrix;
     public MatrixFloat WorldToLocalMatrix => MatrixFloat.InvertByRowReduction(LocalToWorldMatrix);
 
+    #endregion
+    public Transform Parent { get; private set; }
     public Vector3 WorldPosition
     {
         get
         {
-            MatrixFloat TRS = LocalToWorldMatrix;
-            if (Parent == null)
-                return new Vector3(TRS[0, 3], TRS[1, 3], TRS[2, 3]);
-                
-            Transform currentParent = Parent;
-            TRS = currentParent.WorldToLocalMatrix;
-            while (currentParent.Parent != null)
+            MatrixFloat matrix = LocalToWorldMatrix;
+            return new Vector3(matrix[0, 3], matrix[1, 3], matrix[2, 3]);
+        }
+        set
+        {
+            LocalPosition = value;
+            if (Parent != null)
             {
-                TRS *= currentParent.Parent.WorldToLocalMatrix;
-                currentParent = Parent.Parent;
+                MatrixFloat worldTRS = WorldToLocalMatrix;
+                LocalPosition = new Vector3(worldTRS[0, 3], worldTRS[1, 3], worldTRS[2, 3]);
             }
-
-            TRS *= LocalToWorldMatrix;
-            return new Vector3(TRS[0, 3], TRS[1, 3], TRS[2, 3]);
         }
     }
 
+    public Transform(Vector3 localPosition = null)
+    {
+        if(localPosition != null) {LocalPosition = localPosition;}
+    }
+    
     public void SetParent(Transform tParent) => Parent = tParent;
 }

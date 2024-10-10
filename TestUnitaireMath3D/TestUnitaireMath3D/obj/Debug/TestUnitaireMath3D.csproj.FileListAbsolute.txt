@@ -16,3 +16,12 @@ E:\Git\TU_Math3D\TestUnitaireMath3D\TestUnitaireMath3D\bin\Debug\nunit.framework
 E:\Git\TU_Math3D\TestUnitaireMath3D\TestUnitaireMath3D\obj\Debug\TestUnitaireMath3D.csproj.AssemblyReference.cache
 E:\Git\TU_Math3D\TestUnitaireMath3D\TestUnitaireMath3D\obj\Debug\TestUnitaireMath3D.csproj.CoreCompileInputs.cache
 E:\Git\TU_Math3D\TestUnitaireMath3D\TestUnitaireMath3D\obj\Debug\TestUnit.EB2D147E.Up2Date
+D:\Git\TU_matrix_quaternion\TestUnitaireMath3D\TestUnitaireMath3D\bin\Debug\TestUnitaireMath3D.dll
+D:\Git\TU_matrix_quaternion\TestUnitaireMath3D\TestUnitaireMath3D\bin\Debug\TestUnitaireMath3D.pdb
+D:\Git\TU_matrix_quaternion\TestUnitaireMath3D\TestUnitaireMath3D\bin\Debug\nunit.framework.dll
+D:\Git\TU_matrix_quaternion\TestUnitaireMath3D\TestUnitaireMath3D\bin\Debug\nunit.framework.xml
+D:\Git\TU_matrix_quaternion\TestUnitaireMath3D\TestUnitaireMath3D\obj\Debug\TestUnitaireMath3D.csproj.AssemblyReference.cache
+D:\Git\TU_matrix_quaternion\TestUnitaireMath3D\TestUnitaireMath3D\obj\Debug\TestUnitaireMath3D.csproj.CoreCompileInputs.cache
+D:\Git\TU_matrix_quaternion\TestUnitaireMath3D\TestUnitaireMath3D\obj\Debug\TestUnitaireMath3D.csproj.CopyComplete
+D:\Git\TU_matrix_quaternion\TestUnitaireMath3D\TestUnitaireMath3D\obj\Debug\TestUnitaireMath3D.dll
+D:\Git\TU_matrix_quaternion\TestUnitaireMath3D\TestUnitaireMath3D\obj\Debug\TestUnitaireMath3D.pdb

@@ -48,6 +48,7 @@
         <Compile Include="Core\Matrix\MatrixFloat.cs" />
         <Compile Include="Core\Matrix\MatrixInt.cs" />
         <Compile Include="Core\Matrix\MatrixRowReductionAlgorithm.cs" />
+        <Compile Include="Core\Quaternion\Quaternion.cs" />
         <Compile Include="Core\Transform\Transform.cs" />
         <Compile Include="Core\Vector\Vector3.cs" />
         <Compile Include="Core\Vector\Vector4.cs" />
@@ -73,6 +74,9 @@
         <Compile Include="Tests\Tests19_TransformLocalScale.cs" />
         <Compile Include="Tests\Tests20_TransformLocalEverything.cs" />
         <Compile Include="Tests\Tests21_TransformSetParentAndCheckWorldPosition.cs" />
+        <Compile Include="Tests\Tests22_TransformChangeWorldPosition.cs" />
+        <Compile Include="Tests\Tests23_NewQuaternions.cs" />
+        <Compile Include="Tests\Tests24_QuaternionsAngleAxis.cs" />
     </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets"/>
     <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
