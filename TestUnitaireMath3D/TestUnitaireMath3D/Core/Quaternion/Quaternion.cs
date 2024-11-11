@@ -32,6 +32,18 @@ public struct Quaternion
         }
     }
 
+    public Vector3 EulerAngles
+    {
+        get
+        {
+            MatrixFloat matrix = Matrix;
+            float p = -(float)Math.Asin(matrix[1, 2]);
+            float h = Math.Cos(p) != 0 ? (float)Math.Atan2(matrix[0,2], matrix[2,2]) : (float)Math.Atan2(-matrix[2,0], matrix[0,0]);
+            float b = Math.Cos(p) != 0 ? (float)Math.Atan2(matrix[1, 0], matrix[1, 1]) : 0;
+            return new Vector3(p, h, b) * (360 / (float)(Math.PI * 2));
+        }
+    }
+
     public static Quaternion AngleAxis(float angle, Vector3 axis)
     {
         float rad = angle * (float)(Math.PI / 180);
@@ -51,4 +63,13 @@ public struct Quaternion
         MatrixFloat result = q1.Matrix * point.ToMatrix().Transpose();
         return new Vector3(result[0,0], result[1,0], result[2,0]);
     }
-}
+
+    public static Quaternion Euler(float x, float y, float z)
+    {
+        Quaternion qx = AngleAxis(x, Vector3.Forward);
+        Quaternion qy = AngleAxis(y, Vector3.Right);
+        Quaternion qz = AngleAxis(z, Vector3.Up);
+
+        return qy * qx * qz;
+    }
+}   

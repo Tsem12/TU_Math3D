@@ -81,6 +81,8 @@
         <Compile Include="Tests\Tests26_QuaternionsPointRotation.cs" />
         <Compile Include="Tests\Tests27_QuaternionsMatrix.cs" />
         <Compile Include="Tests\Tests28_QuaternionsEulerConversions.cs" />
+        <Compile Include="Tests\Tests29_TransformGetLocalRotationAsQuaternion.cs" />
+        <Compile Include="Tests\Tests30_TransformSetLocalRotationAsQuaternion.cs" />
     </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets"/>
     <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

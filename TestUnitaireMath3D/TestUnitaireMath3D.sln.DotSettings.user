@@ -2,8 +2,12 @@
 	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/FilesAndFoldersToSkip2/=7020124F_002D9FFC_002D4AC3_002D8F3D_002DAAB8E0240759_002Ff_003AAssert_002Ecs_002Fl_003AC_0021_003FUsers_003Ftrans_003FAppData_003FRoaming_003FJetBrains_003FRider2024_002E2_003Fresharper_002Dhost_003FDecompilerCache_003Fdecompiler_003F497e7c0354334ae6b2579b219192bcf04a000_003F1e_003Fab74ff51_003FAssert_002Ecs/@EntryIndexedValue">ForceIncluded</s:String>
 	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/FilesAndFoldersToSkip2/=7020124F_002D9FFC_002D4AC3_002D8F3D_002DAAB8E0240759_002Ff_003AAssert_002Ecs_002Fl_003A_002E_002E_003F_002E_002E_003FAppData_003FRoaming_003FJetBrains_003FRider2024_002E2_003Fresharper_002Dhost_003FDecompilerCache_003Fdecompiler_003F497e7c0354334ae6b2579b219192bcf04a000_003F1e_003Fab74ff51_003FAssert_002Ecs/@EntryIndexedValue">ForceIncluded</s:String>
 	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/FilesAndFoldersToSkip2/=7020124F_002D9FFC_002D4AC3_002D8F3D_002DAAB8E0240759_002Ff_003AMath_002Ecs_002Fl_003A_002E_002E_003F_002E_002E_003FAppData_003FRoaming_003FJetBrains_003FRider2024_002E2_003Fresharper_002Dhost_003FDecompilerCache_003Fdecompiler_003F0da8a94897c945419a9935a75f4e9b6a531020_003Ff8_003F99575b23_003FMath_002Ecs/@EntryIndexedValue">ForceIncluded</s:String>
+	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/FilesAndFoldersToSkip2/=7020124F_002D9FFC_002D4AC3_002D8F3D_002DAAB8E0240759_002Ff_003ASetUpTearDownCommand_002Ecs_002Fl_003AC_0021_003FUsers_003Ftrans_003FAppData_003FRoaming_003FJetBrains_003FRider2024_002E2_003Fresharper_002Dhost_003FDecompilerCache_003Fdecompiler_003F497e7c0354334ae6b2579b219192bcf04a000_003Fd0_003F4b4b1ea4_003FSetUpTearDownCommand_002Ecs/@EntryIndexedValue">ForceIncluded</s:String>
 	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/FilesAndFoldersToSkip2/=7020124F_002D9FFC_002D4AC3_002D8F3D_002DAAB8E0240759_002Ff_003ASetUpTearDownCommand_002Ecs_002Fl_003A_002E_002E_003F_002E_002E_003FAppData_003FRoaming_003FJetBrains_003FRider2024_002E2_003Fresharper_002Dhost_003FDecompilerCache_003Fdecompiler_003F497e7c0354334ae6b2579b219192bcf04a000_003Fd0_003F4b4b1ea4_003FSetUpTearDownCommand_002Ecs/@EntryIndexedValue">ForceIncluded</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=03996d19_002D172d_002D4e25_002Dad27_002D28a02db1c708/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Tests04_ScalarMultiplication" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;ProjectFolder&gt;B1621E52-902E-43F0-BD56-402EB5DF8FAA/d:Tests&lt;/ProjectFolder&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=1ef91509_002Dc4dc_002D4d70_002D9cf3_002Da402c6f59231/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="TestTransformSetLocalRotationQuaternionYAxis" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;ProjectFolder&gt;B1621E52-902E-43F0-BD56-402EB5DF8FAA/d:Tests&lt;/ProjectFolder&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=437219fa_002D32d9_002D4cf9_002Dbe21_002D78be42e0ee43/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="TestNewEmptyMatrices" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
@@ -26,11 +30,18 @@
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
 	
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=e910c44a_002Ded39_002D4f77_002Da96e_002D9384dc81a7b5/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="TestNewEmptyMatrices #3" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=e910c44a_002Ded39_002D4f77_002Da96e_002D9384dc81a7b5/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="TestNewEmptyMatrices #3" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;Or&gt;&#xD;
     &lt;ProjectFile&gt;B1621E52-902E-43F0-BD56-402EB5DF8FAA/d:Tests/f:Tests25_QuaternionsMultiplication.cs&lt;/ProjectFile&gt;&#xD;
     &lt;ProjectFile&gt;B1621E52-902E-43F0-BD56-402EB5DF8FAA/d:Tests/f:Tests26_QuaternionsPointRotation.cs&lt;/ProjectFile&gt;&#xD;
     &lt;ProjectFile&gt;B1621E52-902E-43F0-BD56-402EB5DF8FAA/d:Tests/f:Tests27_QuaternionsMatrix.cs&lt;/ProjectFile&gt;&#xD;
+    &lt;TestAncestor&gt;&#xD;
+      &lt;TestId&gt;NUnit3x::B1621E52-902E-43F0-BD56-402EB5DF8FAA::.NETFramework,Version=v4.8::Maths_Matrices.Tests.Tests28_QuaternionsEulerConversions.TestQuaternionFromEulerCustomAxis1&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;NUnit3x::B1621E52-902E-43F0-BD56-402EB5DF8FAA::.NETFramework,Version=v4.8::Maths_Matrices.Tests.Tests28_QuaternionsEulerConversions.TestQuaternionToEulerCustomAxis1&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;NUnit3x::B1621E52-902E-43F0-BD56-402EB5DF8FAA::.NETFramework,Version=v4.8::Maths_Matrices.Tests.Tests28_QuaternionsEulerConversions.TestQuaternionFromEulerCustomAxis2&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;NUnit3x::B1621E52-902E-43F0-BD56-402EB5DF8FAA::.NETFramework,Version=v4.8::Maths_Matrices.Tests.Tests28_QuaternionsEulerConversions.TestQuaternionToEulerCustomAxis2&lt;/TestId&gt;&#xD;
+    &lt;/TestAncestor&gt;&#xD;
+    &lt;ProjectFile&gt;B1621E52-902E-43F0-BD56-402EB5DF8FAA/d:Tests/f:Tests29_TransformGetLocalRotationAsQuaternion.cs&lt;/ProjectFile&gt;&#xD;
   &lt;/Or&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
 	<s:String x:Key="/Default/Monitoring/StartMode/@EntryValue">Disabled</s:String></wpf:ResourceDictionary>

@@ -1,7 +1,3 @@
-using System;
-using System.Numerics;
-
-
 namespace Maths_Matrices.Tests
 {
     public class MatrixInt
@@ -124,7 +120,7 @@ namespace Maths_Matrices.Tests
         
         public static MatrixInt operator *(MatrixInt a, int value)
         {
-            return MatrixInt.Multiply(a, value);
+            return Multiply(a, value);
         }
 
         public static MatrixInt operator *(int value, MatrixInt a) => a * value;
@@ -154,8 +150,8 @@ namespace Maths_Matrices.Tests
             return result;
         }
 
-        public static MatrixInt operator +(MatrixInt a, MatrixInt b) => MatrixInt.Add(a, b);
-        public static MatrixInt operator -(MatrixInt a, MatrixInt b) => MatrixInt.Add(a, -b);
+        public static MatrixInt operator +(MatrixInt a, MatrixInt b) => Add(a, b);
+        public static MatrixInt operator -(MatrixInt a, MatrixInt b) => Add(a, -b);
 
         #endregion
 
@@ -184,7 +180,7 @@ namespace Maths_Matrices.Tests
         }
         public static MatrixInt Multiply(MatrixInt a, MatrixInt b) => a.Multiply(b);
 
-        public static MatrixInt operator *(MatrixInt a, MatrixInt b) => MatrixInt.Multiply(a, b);
+        public static MatrixInt operator *(MatrixInt a, MatrixInt b) => Multiply(a, b);
         
         #endregion
 
